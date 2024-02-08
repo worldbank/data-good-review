@@ -1,4 +1,4 @@
-# Conducting a Review of *Data Good*
+# Peer Reviewing a *Data Good*
 
 Thank you for choosing to conduct a peer review of our [Data Goods](https://worldbank.github.io/data-good-training/docs/introduction-to-data-goods.html)! Peer review is a crucial step in collaborative development, ensuring code quality, correctness, and adherence to project standards. This page outlines the objective, scope, logistics and criteria for conducting a peer review.
 
