@@ -1,6 +1,6 @@
-# Timeline of the review
+# Timeline of the Review
 
-The peer review will be conducted starting now until the end of April. A detailed breakdown of the activities and meeting schedule is given here. 
+The peer review will be conducted starting now until the end of April. A detailed breakdown of the activities and meeting schedule is given here.
 
 | Week | Phase     | Activities                                                                                                                                                        | Meetings                                                    |
 | ---- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
