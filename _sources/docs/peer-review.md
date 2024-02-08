@@ -44,7 +44,7 @@ Once you have your prerequisites, you can use the following criteria to conduct 
 
 ### I. Readability
 
-Readability of a Data Good is in two parts - first is code readability and second is the readability of the methodology documentation. A code is readable when its intent is being communicated to other developers. For the methodology documnetation, it should present, in a succint and intelligible manner, the research behind why the code is written that way.
+Readability of a Data Good is in two parts - first is code readability and second is the readability of the methodology documentation. A code is readable when its intent is being communicated to other developers. For the methodology documnetation, it should present, in a succinct and intelligible manner, the research behind why the code is written that way.
 
 ![Code-Readability-Comic](../docs/images/code_quality.png)
 
@@ -76,7 +76,6 @@ Here are some guiding questions that could help you check for the readability:
 
 4. Is the methodology easy to read and understand?
 
-
 ### II. Reproducibility
 
 Reproducibility is when you can take the code we shared with you and run it on your own without any glitches. Ideally, you should be able to install the required libraries, press play and watch the visualizations unfold. However, it is easier said than done and that's why we want you to check for it.
@@ -97,7 +96,7 @@ The last check is for the reusability of the code. At this stage, you should hav
 
 **Step 2:** Gather data from the sources specified. If the country you picked does not have the same open source datasets because it is a [fragile, conflict-affected or violence-affected state](https://www.worldbank.org/en/topic/fragilityconflictviolence/overview), please document this and pick another country.
 
-**Step 3:** Fork this repository to create your own copy. Use that to reuse the Data Product for the new country. 
+**Step 3:** Fork this repository to create your own copy. Use that to reuse the Data Product for the new country.
 
 **Step 4:** Use the code to rerun the same analysis for a different country. If there are any issues in this phase, please raise an issue for each of them on GitHub.
 
