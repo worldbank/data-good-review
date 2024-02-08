@@ -1,6 +1,6 @@
 # Data Goods: World Bank Reusable Data Products
 
-Welcome to the Data Goods Handbook! This manual is designed to assist data scientists, analysts students or enthusiasts in creating and contributing impactful reusable data products: a [_Data Good_](docs/introduction-to-data-goods.md).
+Welcome to the Data Goods Handbook! This manual is designed to assist data scientists, students and enthusiasts in creating and contributing impactful reusable data products: a [_Data Good_](docs/introduction-to-data-goods.md).
 
 ## Table of Contents
 
