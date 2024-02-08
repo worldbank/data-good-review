@@ -7,6 +7,7 @@ parts:
       - file: docs/introduction-to-data-goods
       - file: docs/howard-peer-review
       - file: docs/peer-review
+      - file: docs/review-timeline
   - caption: Data Product Examples
     numbered: True
     chapters:

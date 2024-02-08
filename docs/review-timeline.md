@@ -1,8 +1,12 @@
+# Timeline of the Peer Review
+
+You can conduct this peer review starting this week until the end of April. The details of the activities you can conduct and the check-in meetings is given below. 
+
 | Week | Phase     | Activities                                                                                                                                             | Meetings                                                    |
 | ---- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------- |
 | 2/05 | Setup     |                                                                                                                                                        | Kickoff meeting between Howard University and World Bank    |
 | 2/12 | Review    | Get familiar with using GitHub for your review.<br/>Check access to all Data products and all the GitHub repositories<br/>Check access to all datasets |                                                             |
-| 2/19 |           | Review code of Data Products<br/>Add issues and suggest edits on the respective GitHub repositories.                                                   |                                                             |
+| 2/19 |           | Review code of Data Products<br/>Add issues and suggest edits on the respective GitHub repositories.                                               a    |                                                             |
 | 2/26 |           | Review metodology and documentation of Data Product<br/>Add issues and suggest edits to the documentation                                              | Review discussion and Reproducibility Guidance meeting      |
 | 3/04 | Reproduce | Check quality of methodolgy for reproduction<br/>Add issues and suggest edits on respective GitHub repositories                                        |                                                             |
 | 3/11 |           | Reproduce 2 notebooks of 2 different Data Products<br/>Document all issues encountered                                                                 |                                                             |
