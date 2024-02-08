@@ -1,3 +1,7 @@
+# Timeline of the review
+
+The peer review will be conducted starting now until the end of April. A detailed breakdown of the activities and meeting schedule is given here. 
+
 | Week | Phase     | Activities                                                                                                                                                        | Meetings                                                    |
 | ---- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
 | 2/05 | Setup     |                                                                                                                                                                   | Kickoff meeting between Howard University and World Bank    |
