@@ -2,13 +2,13 @@
 
 Thank you for choosing to conduct a peer review of our [Data Goods](https://worldbank.github.io/data-good-training/docs/introduction-to-data-goods.html)! Peer review is a crucial step in collaborative development, ensuring code quality, correctness, and adherence to project standards. This page outlines the objective, scope, logistics and criteria for conducting a peer review.
 
-## Objective of the peer review
+## Objective of the Peer Review
 
 The main goal of this peer review is to make the Data Good readable, reproducible and reusable. Additionally, the Data Lab is trying to improve our new method of disseminating Data Goods - using Jupyter Books hosted on GitHub. The vision for this method is that the code and documentation are presented as a singular unit making it easy for technical staff and country office experts to access the results from open source and proprietary data.  
 
 While we hope that you can help make our code better, any feedback on improving the final deliverable is highly appreciated.
 
-## Scope of review
+## Scope of Review
 
 The scope of the review consists of five different data products:
 
@@ -30,7 +30,7 @@ Each of these data products contains the code and methodology created by our col
 
 In case you’re having any issues accessing the resources, please write to [datalab@worldbank.org](mailto:datalab@worldbank.org).
 
-## Logistics of the review
+## Logistics of the Review
 
 The peer review will take place on GitHub, akin to [Journal of Open Source Software](https://github.com/openjournals/joss-reviews/issues). This is to ensure that the review is openly accessible, collaborative, transparent and iterative. This will also allow us to give due credit to the reviewer (you!) for all their work.
 
@@ -38,7 +38,7 @@ The steps to follow to provide an effective peer review on GitHub are outlined i
 
 For instance, here is the [`CONTRIBUTING.md`](CONTRIBUTING.md) file of this project. Each data product (e.g., [Nighttime Lights Trends in Gaza](https://datapartnership.org/gaza-israel-conflict-impact-analysis/notebooks/nighttime-lights/README.html)) contains their respective contribution guidelines. Please ensure you follow the steps to get used to using GitHub as a mechanism to conduct your review.
 
-## Criteria for the review
+## Criteria for the Review
 
 Once you have your prerequisites, you can use the following criteria to conduct your review. Please note that this is only a guidance sheet. In case you have additional feedback, or would like to use different questions to achieve the same objectives of readability, reproducibility and reusability, please feel free.
 
@@ -78,7 +78,7 @@ Here are some guiding questions that could help you check for the readability:
 
 Use each of these questions to raise issues, and suggest changes in the GitHub repository. At the end of this phase, you should be able
 
-### II. Reproducibility Check
+### II. Reproducibility
 
 Reproducibility is when you can take the code we shared with you and run it on your own without any glitches. Ideally, you should be able to install the required libraries, press play and watch the visualizations unfold. However, it is easier said than done and that's why we want you to check for it.
 
@@ -90,7 +90,7 @@ Here are some guiding questions to help you with a reproducibility check:
 
 3. Are all the assumptions made within the code documented in the notebook?
 
-### III. Reusability Check
+### III. Reusability
 
 The last check is for the reusability of the code. At this stage, you should have been able to rerun the entire notebook and produce results for the country for which the Data Good is made. Now, you pick a country or region of your choice and see if you can use this code to answer the same research question in a different context.
 
@@ -98,7 +98,9 @@ The last check is for the reusability of the code. At this stage, you should hav
 
 **Step 2:** Gather data from the sources specified. If the country you picked does not have the same open source datasets because it is a [fragile, conflict-affected or violence-affected state](https://www.worldbank.org/en/topic/fragilityconflictviolence/overview), please document this and pick another country.
 
-**Step 3:** Use the code to rerun the same analysis for a different country. If there are any issues in this phase, please raise an issue for each of them on GitHub.
+**Step 3:** Fork this repository to create your own copy. Use that to reuse the Data Product for the new country. 
+
+**Step 4:** Use the code to rerun the same analysis for a different country. If there are any issues in this phase, please raise an issue for each of them on GitHub.
 
 Here are some guiding questions to check for the validity of this Data product in the context of te new country:
 
