@@ -4,7 +4,7 @@ Thank you for choosing to conduct a peer review of our [Data Goods](https://worl
 
 ## Objective of the Peer Review
 
-The main goal of this peer review is to make the Data Good readable, reproducible and reusable. Additionally, the Data Lab is trying to improve our new method of disseminating Data Goods - using Jupyter Books hosted on GitHub. The vision for this method is that the code and documentation are presented as a singular unit making it easy for technical staff and country office experts to access the results from open source and proprietary data.  
+The main goal of this peer review is to make the Data Good readable, reproducible and reusable. Additionally, the Data Lab is trying to improve our new method of disseminating Data Goods - using Jupyter Books hosted on GitHub. The vision for this method is that the code and documentation are presented as a singular unit making it easy for technical staff and country office experts to access the results from open source and proprietary data.
 
 While we hope that you can help make our code better, any feedback on improving the final deliverable is highly appreciated.
 
@@ -25,8 +25,8 @@ The scope of the review consists of five different data products:
 Each of these data products contains the code and methodology created by our colleagues to produce different indicators. For each of the five products, you will have -
 
 - **Code**: GitHub Repository. In your case, all of them are linked in this  [Data Goods Training Book](https://github.com/worldbank/data-good-training)
-- **Public facing Data Good**: A Jupyter Book where most of the code is hidden acts as an easy-to-read face of the Data Good. Each product has its own Jupyter Book.  
-- **Data Access**: Te data sources that were used fore the five products will be described in te Jupyter Book. Open data should already be accessible to you using the links provided in the Foundational Datasets section of the Data product. Data access to SharePoint/AWS buckets will be provided to you by the Data lab team.
+- **Webbook**: A Jupyter Book where most of the code is hidden acts as an easy-to-read face of the Data Good. Each product has its own Jupyter Book.
+- **Data Access**: The data sources that were used fore the five products will be described in te Jupyter Book. Open data should already be accessible to you using the links provided in the Foundational Datasets section of the Data product. Data access to SharePoint/AWS buckets will be provided to you by the Data lab team.
 
 In case you’re having any issues accessing the resources, please write to [datalab@worldbank.org](mailto:datalab@worldbank.org).
 
@@ -44,7 +44,7 @@ Once you have your prerequisites, you can use the following criteria to conduct 
 
 ### I. Readability
 
-Readability of a Data Good is in two parts - first is code readability and second is the readability of the methodology documentation. A code is readable when its intent is being communicated to other developers. For the methodology documnetation, it should present, in a succint and intelligible manner, the research behind why the code is written that way.
+Readability of a Data Good is in two parts - first is code readability and second is the readability of the methodology documentation. A code is readable when its intent is being communicated to other developers. For the methodology documentation, it should present, in a succinct and intelligible manner, the research behind why the code is written that way.
 
 ![Code-Readability-Comic](../docs/images/code_quality.png)
 
@@ -76,7 +76,6 @@ Here are some guiding questions that could help you check for the readability:
 
 4. Is the methodology easy to read and understand?
 
-
 ### II. Reproducibility
 
 Reproducibility is when you can take the code we shared with you and run it on your own without any glitches. Ideally, you should be able to install the required libraries, press play and watch the visualizations unfold. However, it is easier said than done and that's why we want you to check for it.
@@ -97,11 +96,11 @@ The last check is for the reusability of the code. At this stage, you should hav
 
 **Step 2:** Gather data from the sources specified. If the country you picked does not have the same open source datasets because it is a [fragile, conflict-affected or violence-affected state](https://www.worldbank.org/en/topic/fragilityconflictviolence/overview), please document this and pick another country.
 
-**Step 3:** Fork this repository to create your own copy. Use that to reuse the Data Product for the new country. 
+**Step 3:** Fork this repository to create your own copy. Use that to reuse the Data Product for the new country.
 
 **Step 4:** Use the code to rerun the same analysis for a different country. If there are any issues in this phase, please raise an issue for each of them on GitHub.
 
-Here are some guiding questions to check for the validity of this Data product in the context of te new country:
+Here are some guiding questions to check for the validity of this Data product in the context of the new country:
 
 1. Are there assumptions that should be captured if the Data Good is to be useful for the new country?
 
