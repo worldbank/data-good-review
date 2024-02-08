@@ -76,7 +76,6 @@ Here are some guiding questions that could help you check for the readability:
 
 4. Is the methodology easy to read and understand?
 
-Use each of these questions to raise issues, and suggest changes in the GitHub repository. At the end of this phase, you should be able
 
 ### II. Reproducibility
 
