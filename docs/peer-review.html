@@ -65,7 +65,7 @@
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Nighttime Lights Trends in Gaza and West Bank" href="../notebooks/nighttime-lights/nighttime-lights.html" />
+    <link rel="next" title="&lt;no title&gt;" href="review-timeline.html" />
     <link rel="prev" title="What is a Data Good?" href="introduction-to-data-goods.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -187,13 +187,13 @@
 <li class="toctree-l1"><a class="reference internal" href="introduction-to-data-goods.html">What is a <em>Data Good</em>?</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Peer Reviewing a <em>Data Good</em></a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Data Goods Examples</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Data Product Examples</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../notebooks/nighttime-lights/nighttime-lights.html">Nighttime Lights Trends in Gaza and West Bank</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://datapartnership.github.io/lebanon-economic-monitor/notebooks/air-pollution/air-pollution.html">Air Pollution in Lebanon</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://datapartnership.github.io/lebanon-economic-monitor/notebooks/population/population.html">Population in Lebanon</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://datapartnership.github.io/morocco-earthquake-impact/docs/drought-index.html">Drought in Morocco</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://datapartnership.github.io/morocco-earthquake-impact/notebooks/conflict-acled.html">Drought and Conflict in Morocco</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://datapartnership.org/morocco-economic-monitor/docs/drought-index.html">Drought in Morocco</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://datapartnership.org/syria-economic-monitor/notebooks/conflict/acled.html">Conflict in Syria</a></li>
 </ul>
 
     </div>
@@ -406,18 +406,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peer-review-steps">Peer Review Steps</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clone-the-repository">1. Clone the Repository</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-new-branch">2. Create a New Branch</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-code-changes">3. Review Code Changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-the-changes">4. Test the Changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#provide-constructive-feedback">5. Provide Constructive Feedback</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verify-documentation">6. Verify Documentation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#check-for-code-style">7. Check for Code Style</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#security-and-performance">8. Security and Performance</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#submit-your-review">9. Submit Your Review</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#follow-up">10. Follow Up</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objective-of-the-peer-review">Objective of the Peer Review</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scope-of-review">Scope of Review</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logistics-of-the-review">Logistics of the Review</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#criteria-for-the-review">Criteria for the Review</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#i-readability">I. Readability</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#code-readability">Code Readability</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-readability">Methodology Readability</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-reproducibility">II. Reproducibility</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iii-reusability">III. Reusability</a></li>
 </ul>
 </li>
 </ul>
@@ -433,82 +432,97 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="peer-reviewing-a-data-good">
 <h1>Peer Reviewing a <em>Data Good</em><a class="headerlink" href="#peer-reviewing-a-data-good" title="Permalink to this heading">#</a></h1>
-<p>Welcome to the peer review process on GitHub! Peer review is a crucial step in collaborative development, ensuring code quality, correctness, and adherence to project standards. This guide outlines the steps to perform an effective peer review on GitHub.</p>
-<section id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">#</a></h2>
+<p>Thank you for choosing to conduct a peer review of our <a class="reference external" href="https://worldbank.github.io/data-good-training/docs/introduction-to-data-goods.html">Data Goods</a>! Peer review is a crucial step in collaborative development, ensuring code quality, correctness, and adherence to project standards. This page outlines the objective, scope, logistics and criteria for conducting a peer review.</p>
+<section id="objective-of-the-peer-review">
+<h2>Objective of the Peer Review<a class="headerlink" href="#objective-of-the-peer-review" title="Permalink to this heading">#</a></h2>
+<p>The main goal of this peer review is to make the Data Good readable, reproducible and reusable. Additionally, the Data Lab is trying to improve our new method of disseminating Data Goods - using Jupyter Books hosted on GitHub. The vision for this method is that the code and documentation are presented as a singular unit making it easy for technical staff and country office experts to access the results from open source and proprietary data.</p>
+<p>While we hope that you can help make our code better, any feedback on improving the final deliverable is highly appreciated.</p>
+</section>
+<section id="scope-of-review">
+<h2>Scope of Review<a class="headerlink" href="#scope-of-review" title="Permalink to this heading">#</a></h2>
+<p>The scope of the review consists of five different data products:</p>
 <ul class="simple">
-<li><p><strong>GitHub Account:</strong> Ensure you have a GitHub account. If not, <a class="reference external" href="https://github.com/join">join now</a>.</p></li>
-<li><p><strong>Access to Repository:</strong> Obtain access to the repository you’ll be reviewing. If it’s a public repository, you can directly contribute. For private repositories, request access from the repository owner.</p></li>
+<li><p><a class="reference external" href="https://datapartnership.org/gaza-israel-conflict-impact-analysis/notebooks/nighttime-lights/README.html">Nighttime Lights Trends in Gaza</a></p></li>
+<li><p><a class="reference external" href="https://datapartnership.org/lebanon-economic-monitor/notebooks/air-pollution/air-pollution.html">Air Pollution in Lebanon</a></p></li>
+<li><p><a class="reference external" href="https://datapartnership.org/lebanon-economic-monitor/notebooks/population/population.html">Affected Demographics of Lebanon</a></p></li>
+<li><p><a class="reference external" href="https://datapartnership.org/syria-economic-monitor/notebooks/conflict/acled.html">Armed Conflict Location and Event Data Analysis in Syria</a></p></li>
+<li><p><a class="reference external" href="https://datapartnership.org/morocco-economic-monitor/docs/drought-index.html">Drought in Morocco</a>.</p></li>
 </ul>
-</section>
-<section id="peer-review-steps">
-<h2>Peer Review Steps<a class="headerlink" href="#peer-review-steps" title="Permalink to this heading">#</a></h2>
-<section id="clone-the-repository">
-<h3>1. Clone the Repository<a class="headerlink" href="#clone-the-repository" title="Permalink to this heading">#</a></h3>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/&lt;username&gt;/&lt;repository&gt;.git
-<span class="nb">cd</span><span class="w"> </span>repository
-</pre></div>
-</div>
-</section>
-<section id="create-a-new-branch">
-<h3>2. Create a New Branch<a class="headerlink" href="#create-a-new-branch" title="Permalink to this heading">#</a></h3>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feature/peer-review
-</pre></div>
-</div>
-</section>
-<section id="review-code-changes">
-<h3>3. Review Code Changes<a class="headerlink" href="#review-code-changes" title="Permalink to this heading">#</a></h3>
+<p>Each of these data products contains the code and methodology created by our colleagues to produce different indicators. For each of the five products, you will have -</p>
 <ul class="simple">
-<li><p><strong>Files Changed</strong>: Identify the files modified by the pull request.</p></li>
-<li><p><strong>Read Code</strong>: Understand the proposed changes. Look for clarity, adherence to coding standards, and logical structure.</p></li>
+<li><p><strong>Code</strong>: GitHub Repository. In your case, all of them are linked in this  <a class="reference external" href="https://github.com/worldbank/data-good-training">Data Goods Training Book</a></p></li>
+<li><p><strong>Public facing Data Good</strong>: A Jupyter Book where most of the code is hidden acts as an easy-to-read face of the Data Good. Each product has its own Jupyter Book.</p></li>
+<li><p><strong>Data Access</strong>: Te data sources that were used fore the five products will be described in te Jupyter Book. Open data should already be accessible to you using the links provided in the Foundational Datasets section of the Data product. Data access to SharePoint/AWS buckets will be provided to you by the Data lab team.</p></li>
 </ul>
+<p>In case you’re having any issues accessing the resources, please write to <a class="reference external" href="mailto:datalab&#37;&#52;&#48;worldbank&#46;org">datalab<span>&#64;</span>worldbank<span>&#46;</span>org</a>.</p>
 </section>
-<section id="test-the-changes">
-<h3>4. Test the Changes<a class="headerlink" href="#test-the-changes" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>Local Testing</strong>: If possible, test the changes locally to ensure they work as intended.</p></li>
-<li><p><strong>Review Tests</strong>: Check if the changes include new tests or update existing ones.</p></li>
-</ul>
+<section id="logistics-of-the-review">
+<h2>Logistics of the Review<a class="headerlink" href="#logistics-of-the-review" title="Permalink to this heading">#</a></h2>
+<p>The peer review will take place on GitHub, akin to <a class="reference external" href="https://github.com/openjournals/joss-reviews/issues">Journal of Open Source Software</a>. This is to ensure that the review is openly accessible, collaborative, transparent and iterative. This will also allow us to give due credit to the reviewer (you!) for all their work.</p>
+<p>The steps to follow to provide an effective peer review on GitHub are outlined in the <a class="reference external" href="https://contributing.md"><code class="docutils literal notranslate"><span class="pre">CONTRIBUTING.md</span></code></a> file. Its purpose is to provide guidelines and instructions for individuals who wish to contribute to the project and typically outlines the project’s contribution process, including how to report issues, suggest improvements, and submit pull requests.</p>
+<p>For instance, here is the <a class="reference internal" href="CONTRIBUTING.html"><span class="std std-doc"><code class="docutils literal notranslate"><span class="pre">CONTRIBUTING.md</span></code></span></a> file of this project. Each data product (e.g., <a class="reference external" href="https://datapartnership.org/gaza-israel-conflict-impact-analysis/notebooks/nighttime-lights/README.html">Nighttime Lights Trends in Gaza</a>) contains their respective contribution guidelines. Please ensure you follow the steps to get used to using GitHub as a mechanism to conduct your review.</p>
 </section>
-<section id="provide-constructive-feedback">
-<h3>5. Provide Constructive Feedback<a class="headerlink" href="#provide-constructive-feedback" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>Comments</strong>: Use inline comments on specific lines of code to provide feedback.</p></li>
-<li><p><strong>General Comments</strong>: Add general comments summarizing your review at the end of the pull request.</p></li>
-</ul>
+<section id="criteria-for-the-review">
+<h2>Criteria for the Review<a class="headerlink" href="#criteria-for-the-review" title="Permalink to this heading">#</a></h2>
+<p>Once you have your prerequisites, you can use the following criteria to conduct your review. Please note that this is only a guidance sheet. In case you have additional feedback, or would like to use different questions to achieve the same objectives of readability, reproducibility and reusability, please feel free.</p>
+<section id="i-readability">
+<h3>I. Readability<a class="headerlink" href="#i-readability" title="Permalink to this heading">#</a></h3>
+<p>Readability of a Data Good is in two parts - first is code readability and second is the readability of the methodology documentation. A code is readable when its intent is being communicated to other developers. For the methodology documnetation, it should present, in a succint and intelligible manner, the research behind why the code is written that way.</p>
+<p><img alt="Code-Readability-Comic" src="../_images/code_quality.png" /></p>
+<p>Here are some guiding questions that could help you check for the readability:</p>
+<section id="code-readability">
+<h4>Code Readability<a class="headerlink" href="#code-readability" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Are the variable names readable?</p></li>
+<li><p>Are there code duplications?</p></li>
+<li><p>Is the code formatted well?</p></li>
+<li><p>Is there a style guide being applied?</p></li>
+<li><p>Does the code violate any World Bank security protocols of data sharing?</p></li>
+<li><p>Did you find any bugs/problems with the logic in this code?</p></li>
+<li><p>Are all the packages required to run the code available in the environment file?</p></li>
+</ol>
 </section>
-<section id="verify-documentation">
-<h3>6. Verify Documentation<a class="headerlink" href="#verify-documentation" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>Update Docs</strong>: Ensure that documentation is updated to reflect the changes.</p></li>
-<li><p><strong>Accuracy</strong>: Check if the documentation accurately describes the new features or changes.</p></li>
-</ul>
+<section id="methodology-readability">
+<h4>Methodology Readability<a class="headerlink" href="#methodology-readability" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Is the research question easy to understand?</p></li>
+<li><p>Are all the data sources used in the code well documented?</p></li>
+<li><p>Are the limitations or assumptions of the code well documented?</p></li>
+<li><p>Is the methodology easy to read and understand?</p></li>
+</ol>
 </section>
-<section id="check-for-code-style">
-<h3>7. Check for Code Style<a class="headerlink" href="#check-for-code-style" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>Consistency</strong>: Verify that the code follows the established coding style guide.</p></li>
-<li><p><strong>Naming Conventions</strong>: Check if variable and function names are clear and follow conventions.</p></li>
-</ul>
 </section>
-<section id="security-and-performance">
-<h3>8. Security and Performance<a class="headerlink" href="#security-and-performance" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>Security</strong>: Identify potential security vulnerabilities and suggest improvements.</p></li>
-<li><p><strong>Performance</strong>: Consider the impact on performance and suggest optimizations if necessary.</p></li>
-</ul>
+<section id="ii-reproducibility">
+<h3>II. Reproducibility<a class="headerlink" href="#ii-reproducibility" title="Permalink to this heading">#</a></h3>
+<p>Reproducibility is when you can take the code we shared with you and run it on your own without any glitches. Ideally, you should be able to install the required libraries, press play and watch the visualizations unfold. However, it is easier said than done and that’s why we want you to check for it.</p>
+<p>Here are some guiding questions to help you with a reproducibility check:</p>
+<ol class="arabic simple">
+<li><p>Can you access the open data? For proprietary data, can you access it with necessary permissions?</p></li>
+<li><p>Can you rerun the entire code and produce the same results?</p></li>
+<li><p>Are all the assumptions made within the code documented in the notebook?</p></li>
+</ol>
 </section>
-<section id="submit-your-review">
-<h3>9. Submit Your Review<a class="headerlink" href="#submit-your-review" title="Permalink to this heading">#</a></h3>
+<section id="iii-reusability">
+<h3>III. Reusability<a class="headerlink" href="#iii-reusability" title="Permalink to this heading">#</a></h3>
+<p>The last check is for the reusability of the code. At this stage, you should have been able to rerun the entire notebook and produce results for the country for which the Data Good is made. Now, you pick a country or region of your choice and see if you can use this code to answer the same research question in a different context.</p>
+<p><strong>Step 1:</strong> Pick a country of your choice. You can pick a country you are from, you would like to understand this problem for or at random. In case you find yourself in a situation where you cannot make a choice, please reach out to us. We will gladly help you out. You can also pick a different country for each research question.</p>
+<p><strong>Step 2:</strong> Gather data from the sources specified. If the country you picked does not have the same open source datasets because it is a <a class="reference external" href="https://www.worldbank.org/en/topic/fragilityconflictviolence/overview">fragile, conflict-affected or violence-affected state</a>, please document this and pick another country.</p>
+<p><strong>Step 3:</strong> Fork this repository to create your own copy. Use that to reuse the Data Product for the new country.</p>
+<p><strong>Step 4:</strong> Use the code to rerun the same analysis for a different country. If there are any issues in this phase, please raise an issue for each of them on GitHub.</p>
+<p>Here are some guiding questions to check for the validity of this Data product in the context of te new country:</p>
+<ol class="arabic simple">
+<li><p>Are there assumptions that should be captured if the Data Good is to be useful for the new country?</p></li>
+<li><p>Are there new limitations?</p></li>
+<li><p>Is the sample size of the data available for the new country sufficient to answer the research question?</p></li>
+</ol>
+<p>For this part of the review, you can also choose to get creative and think about what else needs to be present in te data Good to make it a better product.</p>
+<ol class="arabic simple">
+<li><p>Are there other openly available datasources that would answer the research question better?</p></li>
+<li><p>Are there other datasources that would validate the findings we see from this Data Product?</p></li>
+</ol>
+<p>Here are some additional resources that can help you in this process:</p>
 <ul class="simple">
-<li><p><strong>Review Summary</strong>: Provide a summary of your review in the GitHub interface.</p></li>
-</ul>
-</section>
-<section id="follow-up">
-<h3>10. Follow Up<a class="headerlink" href="#follow-up" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>Discussion</strong>: Engage in any discussion arising from your comments.</p></li>
-<li><p><strong>Re-review</strong>: If changes are requested, re-review the modified code.</p></li>
+<li><p><a class="reference external" href="https://www.pyopensci.org/software-peer-review/how-to/reviewer-guide.html">Guide for Reviewers</a></p></li>
 </ul>
 </section>
 </section>
@@ -554,11 +568,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="../notebooks/nighttime-lights/nighttime-lights.html"
+       href="review-timeline.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Nighttime Lights Trends in Gaza and West Bank</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -578,18 +592,17 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peer-review-steps">Peer Review Steps</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clone-the-repository">1. Clone the Repository</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-new-branch">2. Create a New Branch</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-code-changes">3. Review Code Changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-the-changes">4. Test the Changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#provide-constructive-feedback">5. Provide Constructive Feedback</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verify-documentation">6. Verify Documentation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#check-for-code-style">7. Check for Code Style</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#security-and-performance">8. Security and Performance</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#submit-your-review">9. Submit Your Review</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#follow-up">10. Follow Up</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objective-of-the-peer-review">Objective of the Peer Review</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scope-of-review">Scope of Review</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logistics-of-the-review">Logistics of the Review</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#criteria-for-the-review">Criteria for the Review</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#i-readability">I. Readability</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#code-readability">Code Readability</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-readability">Methodology Readability</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-reproducibility">II. Reproducibility</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iii-reusability">III. Reusability</a></li>
 </ul>
 </li>
 </ul>
