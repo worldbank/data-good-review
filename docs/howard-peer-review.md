@@ -1,6 +1,10 @@
 # Requirements of a Peer Review
 
-This document outlines the multiple steps involved in peer reviewing this data good. 
+Thank you for choosing to conduct a peer review of our [Data Goods](https://worldbank.github.io/data-good-training/docs/introduction-to-data-goods.html)! 
+
+
+
+This page outlines the objective, scope, logistics and criteria for conducting a peer review. 
 
 ## Objective of the peer review
 
@@ -10,11 +14,23 @@ While we hope that you can help make our code better, any feedback on improving 
 
 ## Scope of review
 
-The scope of this review contains the code created by our colleagues to produce different indicators, the documentation of the code and the results as seen in the Jupyter Book.  
+The scope of the review consists of five different data products -
 
-* **Code**: GitHub Repository. In your case it is  [Data Goods Training](https://github.com/worldbank/data-good-training) 
-* **Public facing Data Good**: A Jupyter Book where most of the code is hidden acts as an easy-to-read face of the Data Good. You can find that [here](https://worldbank.github.io/data-good-training/README.html). 
-* **Data Access**: Open data should already be accessible to you using the links provided in the Foundational Datasets section. Data access to SharePoint/AWS buckets will be provided to you by the Data lab team 
+- [Nighttime Lights Trends in Gaza](https://datapartnership.org/gaza-israel-conflict-impact-analysis/notebooks/nighttime-lights/README.html)
+
+- [Air Pollution in Lebanon](https://datapartnership.org/lebanon-economic-monitor/notebooks/air-pollution/air-pollution.html)
+
+- [Affected Demographics of Lebanon](https://datapartnership.org/lebanon-economic-monitor/notebooks/population/population.html)
+
+- [Armed Conflict Location and Event Data Analysis in Syria](https://datapartnership.org/syria-economic-monitor/notebooks/conflict/acled.html)
+
+- [Drought in Morocco](https://datapartnership.org/morocco-economic-monitor/docs/drought-index.html). 
+
+Each of these data products contains the code and methodology created by our colleagues to produce different indicators. For each of the five products, you will have - 
+
+* **Code**: GitHub Repository. In your case, all of them are linked in this  [Data Goods Training Book](https://github.com/worldbank/data-good-training) 
+* **Public facing Data Good**: A Jupyter Book where most of the code is hidden acts as an easy-to-read face of the Data Good. Each product has its own Jupyter Book.  
+* **Data Access**: Te data sources that were used fore the five products will be described in te Jupyter Book. Open data should already be accessible to you using the links provided in the Foundational Datasets section of the Data product. Data access to SharePoint/AWS buckets will be provided to you by the Data lab team. 
 
 In case you’re having any issues accessing the resources, please write to [datalab@worldbank.org](mailto:datalab@worldbank.org). 
 
@@ -22,28 +38,86 @@ In case you’re having any issues accessing the resources, please write to [dat
 
 The peer review will take place on GitHub, akin to [Journal of Open Source Software](https://github.com/openjournals/joss-reviews/issues). This is to ensure that the review is openly accessible, collaborative, transparent and iterative. This will also allow us to give due credit to the reviewer (you!) for all their work. 
 
-The steps to follow to provide an effective peer review on GitHub are outlined in the Peer Reviewing a _Data Good_ on GitHub page. Please ensure you follow the steps to get used to using GitHub as a mechanism to conduct your review.
+The steps to follow to provide an effective peer review on GitHub are outlined in the [Peer Reviewing a Data Good](https://worldbank.github.io/data-good-training/docs/peer-review.html) page. Please ensure you follow the steps to get used to using GitHub as a mechanism to conduct your review.
 
 ## Criteria for the review
 
-Once you have your prerequisites, you can use the following criteria to conduct your review. Please note that these are guiding questions. In case you have additional feedback, or want to follow different questions to achieve the same objectives of readability, reproducibility and reusability, please feel free to use them. 
-
-Following are some resources you can use to familiarize yourself with the peer review process 
-
-* https://www.pyopensci.org/software-peer-review/how-to/reviewer-guide.html
+Once you have your prerequisites, you can use the following criteria to conduct your review. Please note that this is only a guidance sheet. In case you have additional feedback, or would like to use different questions to achieve the same objectives of readability, reproducibility and reusability, please feel free.
 
 ### I. Readability
 
-Readability is to check if the existing, data, code and documentation can be understood by the person reading it. 
+Readability of a Data Good is in two parts - first is code readability and second is the readability of the methodology documentation. A code is readable when its intent is being communicated to other developers. For the methodology documnetation, it should present, in a succint and intelligible manner, the research behind why the code is written that way. 
 
-This step means that you are able to read the code and tell exactly what it is doing. For this, the code should be well commented. Similarly, when you read the documentation, as someone who does not understand Nighttime Lights in Gaza or Air Pollution in Lebanon, you should atleast get a sense of the methodology being used. Here are a few checks you can use to check the readability of the code -
+![Code-Readability-Comic](../docs/images/code_quality.png)
 
+Here are some guiding questions that could help you check for the readability -
 
+#### Code Readability
 
-1. 
+1. Are the variable names readable? 
+
+2. Are there code duplications? 
+
+3. Is the code formatted well? 
+
+4. Is there a style guide being applied?
+
+5. Does the code violate any World Bank security protocols of data sharing?
+
+6. Did you find any bugs/problems with the logic in this code?
+
+7. Are all the packages required to run the code available in the environment file?
+
+#### Methodology Readability
+
+1. Is the research question easy to understand?
+
+2. Are all the data sources used in the code well documented? 
+
+3. Are the limitations or assumptions of the code well documented?
+
+4. Is the methodology easy to read and understand?
+
+Use each of these questions to raise issues, and suggest changes in the GitHub repository. At the end of this phase, you should be able 
 
 ### II. Reproducibility Check
 
-Reproducibility is when you can take the code we shared with you and run it on your own without any glitches. Ideally, you should be able to install the required libraries, press play and watch the visualizations unfold. However, 
+Reproducibility is when you can take the code we shared with you and run it on your own without any glitches. Ideally, you should be able to install the required libraries, press play and watch the visualizations unfold. However, it is easier said than done and that's why we want you to check for it. 
+
+Here are some guiding questions to help you with a reproducibility check - 
+
+1. Can you access the open data? For proprietary data, can you access it with necessary permissions?
+
+2. Can you rerun the entire code and produce the same results?
+
+3. Are all the assumptions made within the code documented in the notebook?
 
 ### III. Reusability Check
+
+The last check is for the reusability of the code. At this stage, you should have been able to rerun the entire notebook and produce results for the country for which the Data Good is made. Now, you pick a country or region of your choice and see if you can use this code to answer the same research question in a different context. 
+
+**Step 1:** Pick a country of your choice. You can pick a country you are from, you would like to understand this problem for or at random. In case you find yourself in a situation where you cannot make a choice, please reach out to us. We will gladly help you out. You can also pick a different country for each research question. 
+
+**Step 2:** Gather data from the sources specified. If the country you picked does not have the same open source datasets because it is a [fragile, conflict-affected or violence-affected state](https://www.worldbank.org/en/topic/fragilityconflictviolence/overview), please document this and pick another country. 
+
+**Step 3:** Use the code to rerun the same analysis for a different country. If there are any issues in this phase, please raise an issue for each of them on GitHub. 
+
+Here are some guiding questions to check for the validity of this Data product in the context of te new country - 
+
+1. Are there assumptions that should be captured if the Data Good is to be useful for the new country?
+
+2. Are there new limitations? 
+
+3. Is the sample size of the data available for the new country sufficient to answer the research question?
+
+For this part of the review, you can also choose to get creative and think about what else needs to be present in te data Good to make it a better product.
+
+1. Are there other openly available datasources that would answer the research question better?
+
+2. Are there other datasources that would validate the findings we see from this Data Product? 
+
+
+
+Here are some additional resources that can help you in this process - 
+
+- [Guide for Reviewers](https://www.pyopensci.org/software-peer-review/how-to/reviewer-guide.html)

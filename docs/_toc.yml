@@ -5,8 +5,8 @@ parts:
   - caption: Getting Started
     chapters:
       - file: docs/introduction-to-data-goods
-      - file: docs/peer-review
       - file: docs/howard-peer-review
+      - file: docs/peer-review
   - caption: Data Product Examples
     numbered: True
     chapters:
@@ -16,7 +16,7 @@ parts:
         title: Air Pollution in Lebanon
       - url: https://datapartnership.github.io/lebanon-economic-monitor/notebooks/population/population.html
         title: Population in Lebanon
-      - url: https://datapartnership.github.io/morocco-earthquake-impact/docs/drought-index.html
+      - url: https://datapartnership.org/morocco-economic-monitor/docs/drought-index.html
         title: Drought in Morocco
-      - url: https://datapartnership.github.io/morocco-earthquake-impact/notebooks/conflict-acled.html
-        title: Drought and Conflict in Morocco
+      - url: https://datapartnership.org/syria-economic-monitor/notebooks/conflict/acled.html
+        title: Conflict in Syria
