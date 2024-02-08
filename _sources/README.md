@@ -13,4 +13,4 @@ This project maintains a [Code of Conduct](docs/CODE_OF_CONDUCT.md) to ensure an
 
 ## License
 
-This projects is licensed under the [**Mozilla Public License**](https://www.mozilla.org/en-US/MPL). Remember to replace the [license](LICENSE) if necessary. If open source, [choose an open source license](https://choosealicense.com).
+This projects is licensed under the [**Mozilla Public License**](https://opensource.org/license/mpl-2-0/) - see the [LICENSE](LICENSE) file for details.
